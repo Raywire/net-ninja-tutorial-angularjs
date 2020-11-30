@@ -18,6 +18,7 @@
         <ul>
           <h2>Available</h2>
           <li ng-repeat="ninja in ninjas | orderBy: order | filter: search" ng-show="ninja.available">
+            <img class="img" ng-src="{{ninja.thumb}}" alt="{{ninja.name}}" srcset="" ng-show="ninja.thumb">
             <h3>
               {{ ninja.name }} - {{ ninja.rate | currency: 'KES' }}
             </h3>

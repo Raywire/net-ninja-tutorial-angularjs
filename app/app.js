@@ -22,31 +22,36 @@ myNinjaApp.controller('NinjaController', ['$scope', function($scope){
       name: "Yoshi",
       belt: "green",
       rate: 50,
-      available: true
+      available: true,
+      thumb: 'http://i.pravatar.cc/100?id=skater'
     },
     {
       name: "Crystal",
       belt: "yellow",
       rate: 30,
-      available: true
+      available: true,
+      thumb: 'http://i.pravatar.cc/100?id=skater'
     },
     {
       name: "Ryu",
       belt: "orange",
       rate: 10,
-      available: true
+      available: true,
+      thumb: 'http://i.pravatar.cc/100?id=skater'
     },
     {
       name: "Ryan",
       belt: "black",
       rate: 1000,
-      available: false
+      available: false,
+      thumb: 'http://i.pravatar.cc/100?id=skater'
     },
     {
       name: "Mini",
       belt: "blue",
       rate: 500,
-      available: false
+      available: false,
+      thumb: 'http://i.pravatar.cc/100?id=skater'
     }
   ]
 }])
