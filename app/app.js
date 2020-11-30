@@ -1,4 +1,18 @@
-const myNinjaApp = angular.module('myNinjaApp', [])
+const myNinjaApp = angular.module('myNinjaApp', ['ngRoute'])
+
+myNinjaApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+    .when('/home', {
+      templateUrl: 'views/home.html'
+    })
+    .when('/directory', {
+      templateUrl: 'views/directory.html',
+      controller: 'NinjaController'
+    })
+    .otherwise({
+      redirectTo: '/home'
+    })
+}])
 
 myNinjaApp.controller('NinjaController', ['$scope', function($scope){
   $scope.removeNinja = function(ninja) {
@@ -43,7 +57,7 @@ myNinjaApp.controller('NinjaController', ['$scope', function($scope){
       name: "Ryan",
       belt: "black",
       rate: 1000,
-      available: false,
+      available: true,
       thumb: 'http://i.pravatar.cc/100?id=skater'
     },
     {
