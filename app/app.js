@@ -1,4 +1,4 @@
-const myNinjaApp = angular.module('myNinjaApp', ['ngRoute'])
+const myNinjaApp = angular.module('myNinjaApp', ['ngRoute', 'ngAnimate'])
 
 myNinjaApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
