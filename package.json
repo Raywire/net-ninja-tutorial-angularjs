@@ -1,0 +1,24 @@
+{
+  "name": "net-ninja-tutorial-angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "dev": "http-server -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raywire/net-ninja-tutorial-angularjs.git"
+  },
+  "author": "Ryan Wire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raywire/net-ninja-tutorial-angularjs/issues"
+  },
+  "homepage": "https://github.com/Raywire/net-ninja-tutorial-angularjs#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
