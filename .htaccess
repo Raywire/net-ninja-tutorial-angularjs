@@ -1,0 +1,9 @@
+RewriteEngine On
+
+  # If an existing asset or directory is requested go to it as it is
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URL} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URL} -d
+  RewriteRule ^ - [L]
+
+  # If the requested resource doesn't exist user index.html
+  RewriteRule ^ index.html
